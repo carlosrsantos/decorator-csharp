@@ -7,12 +7,12 @@ public class Vehicle : IVehicle
     private readonly VehicleDTO _vehicle;
     public Vehicle(VehicleDTO vehicle)
     {
-        _vehicle = vehicle;
+        this._vehicle = vehicle;
     }
 
     public VehicleDTO GetVehicle()
     {
-        return _vehicle;
+        return this._vehicle;
     }
 
     public override string ToString()

@@ -10,11 +10,11 @@ public class SuperVehicle : VehicleDecorator
     private string Engine { get; set; }
     public SuperVehicle(IVehicle vehicle) : base(vehicle)
     {
-        Engine = "1.0";
+        this.Engine = "1.0";
     }
     public SuperVehicle(IVehicle vehicle, string engine) : base(vehicle)
     {
-        Engine = engine;
+        this.Engine = engine;
     }
 
     public override SuperVehicleDTO GetVehicle()
@@ -23,7 +23,7 @@ public class SuperVehicle : VehicleDecorator
         {
             Name = base.GetVehicle().Name,
             Brand = base.GetVehicle().Brand,
-            Engine = Engine
+            Engine = this.Engine
         };        
     }
 

@@ -8,16 +8,16 @@ public class VehicleDecorator
 
     public VehicleDecorator(IVehicle vehicle)
     {
-        _vehicle = vehicle;
+        this._vehicle = vehicle;
     }
 
     public virtual VehicleDTO GetVehicle()
     {
-        return _vehicle.GetVehicle();
+        return this._vehicle.GetVehicle();
     }
 
     public override string ToString()
     {
-        return _vehicle.GetVehicle().Brand + " - " + _vehicle.GetVehicle().Name;
+        return this._vehicle.GetVehicle().Brand + " - " + this._vehicle.GetVehicle().Name;
     }
 }
