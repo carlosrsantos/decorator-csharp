@@ -1,3 +1,3 @@
-##Decorators
+## Decorators
 
-Este projeto utiliza do padrão Decorator baseado no GOF
+Este projeto implementa o padrão Decorator baseado no GOF
